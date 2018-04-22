@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    "This is a Comment"
+
+    <RadioGroup
+        android:id="@+id/rdiGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rdiNotification"
+                android:checked="true"
+                android:text="Notifcation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+             <RadioButton
+            android:id="@+id/rdiToast"
+            android:text="Toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnOneTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rdiGroup"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="8dp"
+        android:text="One-Time-Alarm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16000003"
+        tools:layout_editor_absoluteX="0dp"
+        style="style/Widget..AppCompat.Button.Colored"
+        />
+
+    <Button
+        android:id="@+id/btnRepeating"
+        style="style/Widget..AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnOneTime"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="8dp"
+        android:text="Repeating-Alarm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+</android.support.constraint.ConstraintLayout>
