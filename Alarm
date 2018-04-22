@@ -22,7 +22,7 @@
 
              <RadioButton
             android:id="@+id/rdiToast"
-            android:text="Toast"
+            android:text="ButteredToast"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
